@@ -1,11 +1,12 @@
-duplicate = () => {
-      let nums = [3,5,6,6]
+function containsDuplicate(nums) {
+      nums.sort(); // this is for aligning same number together
+
       for (let i = 0; i < nums.length; i++) {
             if (nums[i] === nums[i + 1]) {
-                  return true
+                  return true;
+                  // console.log(true);
             }
       }
-      return false ;
+      return false;
+      // console.log(false);
 }
-
-duplicate()
